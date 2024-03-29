@@ -1,0 +1,88 @@
+/* Complaint.css */
+
+.complaint-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the max-height as needed */
+    margin-bottom: 20px;
+}
+
+.complaint-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    font-weight: bold;
+}
+
+.input-container input[type='text'],
+.input-container input[type='datetime-local'],
+.input-container textarea,
+.input-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.input-container select {
+    padding: 9px 8px; /* Adjust padding for select element */
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .complaint-form {
+        padding: 10px;
+        max-width: 90%; /* Adjust the max-width as needed */
+    }
+
+    .input-container {
+        max-width: 100%;
+    }
+}

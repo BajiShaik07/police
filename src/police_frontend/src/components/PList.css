@@ -1,0 +1,113 @@
+/* PList.css */
+
+/* Overall container */
+.status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Section for updating status and action */
+  .update-section {
+    margin-bottom: 20px;
+  }
+  
+  .update-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container label {
+    margin-right: 10px;
+  }
+  
+  .input-container input[type="text"] {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-container button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: blue;
+  }
+  
+  /* Section for displaying the list of complaints and their statuses */
+  .status-list {
+    width: 100%;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Section for displaying the selected complaint status */
+  .status-display {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .status-display h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries for Various Screen Resolutions */
+  @media screen and (max-width: 992px) {
+    .status-container {
+      padding: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+    }
+  
+    .input-container label {
+      margin-bottom: 5px;
+    }
+  
+    .input-container input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .input-container button {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .status-display {
+      max-width: none;
+    }
+  }
