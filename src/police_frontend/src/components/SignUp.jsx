@@ -5,6 +5,8 @@ import { AuthClient } from "@dfinity/auth-client";
 import { canisterId, createActor } from "declarations/police_backend";
 import { Principal } from "@dfinity/principal";
 import './SignUp.css';
+import logo from '../../public/police-image.png';
+import logo1 from '../../public/user-image.png';
 
 function SignUp() {
   const [isPolice, setIsPolice] = useState(true);
@@ -140,11 +142,11 @@ function SignUp() {
       }
       <div className={`content ${isPolice ? 'left' : 'right'}`}>
         <div className={`left-content ${isPolice ? '' : 'blur'}`}>
-          {/*<img
-            src="police-imag.png"
+          <img
+            src={logo}
             alt="police"
             className="image"
-    />*/}
+    />
           <p className="label">Police</p>
         </div>
         <label className={`switch ${isPolice ? 'left' : 'right'}`}>
@@ -157,11 +159,11 @@ function SignUp() {
           <span className="slider"></span>
         </label>
         <div className={`right-content ${isPolice ? 'blur' : ''}`}>
-          {/*<img
-            src="user-image.png"
+          <img
+            src={logo1}
             alt="user"
             className="image"
-    />*/}
+    />
           <p className="label">User</p>
         </div>
       </div>
@@ -170,11 +172,11 @@ function SignUp() {
         <form>
           <label>
             Fullname:
-            <input id='name' type="name" />
+            <input id='name' className='type' type="name" placeholder='Enter Your Name' />
           </label>
           <label>
             Date of Birth:
-            <input id='date' type='date' />
+            <input id='date'className='type' type='date' />
           </label>
           <label>
             Gender:
@@ -185,8 +187,8 @@ function SignUp() {
             </select>
           </label>
           <label style={{ display: isPolice ? 'block' : 'none' }}>
-            Mobile Number:
-            <input id="specialization" type='text' />
+            Specialization:
+            <input id="specialization" className='type' type='text' placeholder='Enter Your Specialization with Police Id ' />
           </label>
         </form>
         <button type="submit" onClick={ski} className='btn1'>Sign Up</button>

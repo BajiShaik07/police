@@ -164,7 +164,7 @@ const Complaint = () => {
               setComplainantNameError('');
             }}
             required
-          />
+            placeholder='Enter Your Name '/>
           <span className="error">{complainantNameError}</span>
         </div>
         <div className="input-container">
@@ -178,20 +178,60 @@ const Complaint = () => {
               setComplainantContactError('');
             }}
             required
+            placeholder='Enter Your Ph Number '
           />
           <span className="error">{complainantContactError}</span>
         </div>
         <div className="input-container">
           <label htmlFor="incidentDetails">Incident Details:</label>
           <textarea
-            id="incidentDetails"
-            value={incidentDetails}
-            onChange={(e) => {
-              setIncidentDetails(e.target.value);
-              setIncidentDetailsError('');
-            }}
-            required
-          />
+  id="incidentDetails"
+  value={incidentDetails}
+  onChange={(e) => {
+    setIncidentDetails(e.target.value);
+    setIncidentDetailsError('');
+  }}
+  required
+  placeholder={`Complainant Information:
+
+Full Name: [Your Full Name]
+Address: [Your Address]
+Contact Number: [Your Phone Number]
+Email Address: [Your Email Address]
+Date of Birth: [Your Date of Birth]
+Occupation: [Your Occupation]
+
+Complaint Details:
+
+Date and Time of Incident: [Date and Time of the Incident]
+Location of Incident: [Location where the Incident Occurred]
+Description of Incident: [Detailed Description of what Happened]
+
+Witness Information (if applicable):
+
+Name: [Name of Witness]
+Contact Number: [Witness's Phone Number]
+Address: [Witness's Address]
+Relationship to Complainant: [How the Witness is Related to You]
+
+Evidence (if available):
+
+Please provide any evidence such as photographs, videos, documents, etc.
+
+Additional Information:
+
+Any other relevant information or details you would like to add.
+
+Declaration:
+I, [Your Full Name], hereby declare that the information provided above is true and accurate to the best of my knowledge. I understand that providing false information may lead to legal consequences.
+
+Signature:
+[Your Signature]
+
+Date:
+[Date of Signing the Form]`}
+/>
+
           <span className="error">{incidentDetailsError}</span>
         </div>
         <div className="input-container">
@@ -219,6 +259,7 @@ const Complaint = () => {
               setLocationError('');
             }}
             required
+            placeholder='Enter Incident Location'
           />
           <span className="error">{locationError}</span>
         </div>
@@ -233,6 +274,7 @@ const Complaint = () => {
               setAddressError('');
             }}
             required
+            placeholder='Enter Your Permanent Address '
           />
           <span className="error">{addressError}</span>
         </div>
@@ -247,6 +289,7 @@ const Complaint = () => {
               setStateError('');
             }}
             required
+            placeholder='Enter Your State With PinCode  '
           />
           <span className="error">{stateError}</span>
         </div>
