@@ -36,7 +36,6 @@ const UList = () => {
               <th>Date and Time</th>
               <th>Address</th>
               <th>State</th>
-              <th>Pin Code</th>
               <th>Status</th>
               <th>Timestamp</th>
               <th>Actions</th>
