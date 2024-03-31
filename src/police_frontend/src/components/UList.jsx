@@ -1,11 +1,11 @@
-// CList.jsx
-
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
 import "./CList.css";
 
 const UList = () => {
   const [firs, setFirs] = useState([]);
+  const [selectedComplaintId, setSelectedComplaintId] = useState("");
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     const fetchFir = async () => {
@@ -21,10 +21,31 @@ const UList = () => {
     fetchFir();
   }, []);
 
+  // Filter FIRs based on selectedComplaintId
+  const filteredFirs = selectedComplaintId
+    ? firs.filter((fir) => fir.id === selectedComplaintId)
+    : firs;
+
+  // Show "not found" message if no complaints are found
+  useEffect(() => {
+    setNotFound(filteredFirs.length === 0 && selectedComplaintId !== "");
+  }, [filteredFirs, selectedComplaintId]);
+
   return (
     <div className="complaint-list">
       <h2>Complaint List</h2>
       <div className="table-container">
+        <div className="input-container">
+          <label htmlFor="complaintId">Complaint ID:</label>
+          <input
+            type="text"
+            id="complaintId"
+            value={selectedComplaintId}
+            onChange={(e) => setSelectedComplaintId(e.target.value)}
+            placeholder="Enter Complaint ID"
+          />
+        </div>
+        {notFound && <p>No complaints found for the entered ID.</p>}
         <table>
           <thead>
             <tr>
@@ -42,7 +63,7 @@ const UList = () => {
             </tr>
           </thead>
           <tbody>
-            {firs.map((fir) => (
+            {filteredFirs.map((fir) => (
               <tr key={fir.id}>
                 <td>{fir.id}</td>
                 <td>{fir.complainantName}</td>
