@@ -53,7 +53,6 @@ const UList = () => {
                 <td>{fir.dateTime}</td>
                 <td>{fir.address}</td>
                 <td>{fir.state}</td>
-                <td>{fir.pin}</td>
                 <td>{fir.status}</td>
                 <td>{fir.timestamp}</td>
                 <td

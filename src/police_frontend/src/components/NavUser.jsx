@@ -6,7 +6,8 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { police_backend } from "declarations/police_backend";
 import { AuthClient } from "@dfinity/auth-client";
 import { canisterId, createActor } from "declarations/police_backend";
-import { Principal } from "@dfinity/principal";
+import { Principal } from "@dfinity/principal";import logo from '../../public/user-image.png';
+
 
 const NavUser = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -121,11 +122,12 @@ const NavUser = () => {
         {" "}
         {/* Use the class name directly */}
         <div className="logo">
+          <img src={logo} alt="User Logo" />
           <span className="nav-heading">User</span>
         </div>
         <div className="profile">
           <a href="/userprofile">
-            <img src="user-image.png" alt="Profile Pic" />
+            <img src={logo} alt="Profile Pic" />
           </a>
           {/* <span>Hello, {userName}</span> */}
           <button
