@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
 import "./PList.css";
+import Foter from "./Foter";
 
 const PList = () => {
   const [firs, setFirs] = useState([]);
@@ -93,6 +94,7 @@ const PList = () => {
   };
 
   return (
+    <>
     <div className="status-container">
       <div className="update-section">
         <h2>Update Status and Action</h2>
@@ -190,6 +192,8 @@ const PList = () => {
         <p>{selectedComplaintStatus}</p>
       </div>
     </div>
+    <Foter/>
+    </>
   );
 };
 

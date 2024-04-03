@@ -4,6 +4,7 @@ import { AuthClient } from "@dfinity/auth-client";
 import './Home.css';
 import home from '../../public/bg.jpg';
 import { Link } from 'react-router-dom';
+import Foter from './Foter';
 
 const Home = () => {
   const [identity, setIdentity] = useState(null);
@@ -67,7 +68,9 @@ const Home = () => {
           <button onClick={handleConnect}>{identity ? 'Logout' : 'Connect Wallet'}</button>
         </div>
       </div>
+      <Foter/>
     </div>
+
   );
 };
 

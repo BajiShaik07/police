@@ -1,10 +1,10 @@
 .body{
     background-color: #fff;
 }
-.navbar-container {
+.navbar-container1 {
     position: absolute;
   }
-  .profile-body {
+  .profile-body1 {
     overflow-x: hidden;
     height: 100vh;
     width: 100vw;
@@ -15,7 +15,7 @@
     font-weight: 800;
   }
 
-  .navbar {
+  .navbar1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +34,7 @@
   .logo {
     display: flex;
     align-items: center;
+    margin-left: 20px;
   }
 
   .logo img {

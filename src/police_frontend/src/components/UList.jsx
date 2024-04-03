@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
 import "./CList.css";
+import Foter from "./Foter";
 
 const UList = () => {
   const [firs, setFirs] = useState([]);
@@ -32,6 +33,7 @@ const UList = () => {
   }, [filteredFirs, selectedComplaintId]);
 
   return (
+    <>
     <div className="complaint-list">
       <h2>Complaint List</h2>
       <div className="table-container">
@@ -93,6 +95,8 @@ const UList = () => {
         </table>
       </div>
     </div>
+    <Foter/>
+    </>
   );
 };
 

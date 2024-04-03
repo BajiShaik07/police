@@ -115,10 +115,10 @@ const NavUser = () => {
     ? "hamburger hamburger--spring is-active"
     : "hamburger hamburger--spring";
   return isLoading == false ? (
-    <div className="navbar-container profile-body">
+    <div className="navbar-container1 profile-body1">
       {!isUser ? <Navigate to="/" /> : null}
 
-      <nav className="navbar">
+      <nav className="navbar1">
         {" "}
         {/* Use the class name directly */}
         <div className="logo">

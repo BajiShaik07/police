@@ -7,6 +7,7 @@ import { Principal } from "@dfinity/principal";
 import './SignUp.css';
 import logo from '../../public/police-image.png';
 import logo1 from '../../public/user-image.png';
+import Foter from './Foter';
 
 function SignUp() {
   const [isPolice, setIsPolice] = useState(true);
@@ -133,6 +134,7 @@ function SignUp() {
   }
 
   return (
+    <>
     <div className="signup-container">
       {
         isxPolice ? <Navigate to="/policeProfile" /> : null
@@ -201,6 +203,8 @@ function SignUp() {
         <li></li>
       </ul>
     </div>
+    <Foter/>
+    </>
   );
 }
 

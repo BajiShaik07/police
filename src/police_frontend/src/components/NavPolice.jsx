@@ -119,9 +119,9 @@ const NavPolice = () => {
   
   return (
     (isLoading === false) ? (
-      <div className="navbar-container profile-body">
+      <div className="navbar-container1 profile-body1">
         {(!isPolice) ? (<Navigate to="/" />) : (null)}
-        <nav className="navbar">
+        <nav className="navbar1">
           <div className="logo">
             <img src={logo} alt="Police Logo" />
             <span className='nav-heading'>Police</span>
@@ -150,7 +150,7 @@ const NavPolice = () => {
           <div className="dropdown-box">
             <hr />
             <button className="button" onClick={handleWalletClick}>{loggedIn ? 'Logout' : 'Login'}</button>
-            <div className="social-icons">
+            <div className="social-icons" style={{marginLeft: '10px'}}>
               <FaFacebook />
               <FaTwitter />
               <FaInstagram />
