@@ -1,7 +1,7 @@
 // Home.jsx
 import React, { useEffect, useState } from 'react';
 import { AuthClient } from "@dfinity/auth-client";
-import './Home.css';
+import '../Home.css';
 import home from '../../public/bg.jpg';
 import { Link } from 'react-router-dom';
 import Foter from './Foter';
@@ -53,9 +53,10 @@ const Home = () => {
 
 
   return (
-    <div>
+    <>
+    <div className='container-fluid'>
       
-      <header className='h'>
+      <header className='h mt-2'>
         <h1>Police Complaint Management System</h1>
       </header>
 
@@ -68,9 +69,9 @@ const Home = () => {
           <button onClick={handleConnect}>{identity ? 'Logout' : 'Connect Wallet'}</button>
         </div>
       </div>
-      <Foter/>
     </div>
-
+    <Foter/>
+    </>
   );
 };
 

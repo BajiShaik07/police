@@ -119,7 +119,7 @@ const NavPolice = () => {
   
   return (
     (isLoading === false) ? (
-      <div className="navbar-container1 profile-body1">
+      <div className="navbar-container1 profile-body1 mt-3">
         {(!isPolice) ? (<Navigate to="/" />) : (null)}
         <nav className="navbar1">
           <div className="logo">

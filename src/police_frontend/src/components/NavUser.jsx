@@ -115,7 +115,7 @@ const NavUser = () => {
     ? "hamburger hamburger--spring is-active"
     : "hamburger hamburger--spring";
   return isLoading == false ? (
-    <div className="navbar-container1 profile-body1">
+    <div className="navbar-container1 profile-body1 mt-3">
       {!isUser ? <Navigate to="/" /> : null}
 
       <nav className="navbar1">

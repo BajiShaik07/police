@@ -4,7 +4,7 @@ import { police_backend } from "declarations/police_backend";
 import { AuthClient } from "@dfinity/auth-client";
 import { canisterId, createActor } from "declarations/police_backend";
 import { Principal } from "@dfinity/principal";
-import './SignUp.css';
+import '../SignUp.css';
 import logo from '../../public/police-image.png';
 import logo1 from '../../public/user-image.png';
 import Foter from './Foter';

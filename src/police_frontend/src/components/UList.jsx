@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
-import "./CList.css";
 import Foter from "./Foter";
+import '../CList.css';
 
 const UList = () => {
   const [firs, setFirs] = useState([]);

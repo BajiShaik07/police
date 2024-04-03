@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
-import "./PList.css";
+import "../PList.css";
 import Foter from "./Foter";
 
 const PList = () => {
@@ -95,7 +95,8 @@ const PList = () => {
 
   return (
     <>
-    <div className="status-container">
+    <div className="container-fluid mt-2">
+    <div className="status-container ">
       <div className="update-section">
         <h2>Update Status and Action</h2>
         <div className="input-container">
@@ -191,6 +192,7 @@ const PList = () => {
         <h2>Selected Complaint Status</h2>
         <p>{selectedComplaintStatus}</p>
       </div>
+    </div>
     </div>
     <Foter/>
     </>
