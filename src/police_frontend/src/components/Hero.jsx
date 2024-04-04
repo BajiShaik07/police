@@ -52,6 +52,9 @@ const Hero = (props) => {
 
   return (
     <>
+     <div className='h'>
+      <h1>Police Complaint Management System</h1>
+    </div>
       <div className={props.cName}>
         <img src={Navbg} alt='HeroImg' />
       </div>

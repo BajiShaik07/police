@@ -14,6 +14,8 @@
     height: auto;
     max-height: 600px; /* Adjust the max-height as needed */
     margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .complaint-form {
@@ -76,7 +78,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .complaint-form {
         padding: 10px;
         max-width: 90%; /* Adjust the max-width as needed */

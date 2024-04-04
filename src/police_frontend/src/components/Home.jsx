@@ -7,6 +7,7 @@ import Footer from './Footer';
 const Home = () => {
   return (
     <>
+   
       <Hero 
         cName='hero'
         HeroImg='bg.jpg'
