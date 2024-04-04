@@ -4,6 +4,12 @@
     width: 100%;
     padding: 20px;
   }
+  .input-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
   
   .table-container {
     overflow-x: auto;

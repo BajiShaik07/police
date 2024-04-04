@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
-import Foter from "./Foter";
+import Footer from "./Footer";
 import '../CList.css';
 
 const UList = () => {
@@ -95,7 +95,7 @@ const UList = () => {
         </table>
       </div>
     </div>
-    <Foter/>
+    <Footer/>
     </>
   );
 };

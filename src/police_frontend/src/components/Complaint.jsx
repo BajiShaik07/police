@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { police_backend } from "declarations/police_backend";
 import '../Complaint.css';
 import logo from '../../public/complaint.jpg';
-import Foter from './Foter';
+import Footer from './Footer';
 
 const Complaint = () => {
   const [firs, setFirs] = useState([]);
@@ -316,7 +316,7 @@ Date:
         <button onClick={handleAddComplaint}>Submit Complaint</button>
       </div>
     </div>
-    <Foter/>
+    <Footer/>
     </>
   );
 };

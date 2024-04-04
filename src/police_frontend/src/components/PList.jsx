@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
 import "../PList.css";
-import Foter from "./Foter";
+import Footer from "./Footer";
 
 const PList = () => {
   const [firs, setFirs] = useState([]);
@@ -194,7 +194,7 @@ const PList = () => {
       </div>
     </div>
     </div>
-    <Foter/>
+    <Footer/>
     </>
   );
 };

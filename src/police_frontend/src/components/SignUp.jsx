@@ -7,7 +7,7 @@ import { Principal } from "@dfinity/principal";
 import '../SignUp.css';
 import logo from '../../public/police-image.png';
 import logo1 from '../../public/user-image.png';
-import Foter from './Foter';
+import Footer from './Footer';
 
 function SignUp() {
   const [isPolice, setIsPolice] = useState(true);
@@ -203,7 +203,7 @@ function SignUp() {
         <li></li>
       </ul>
     </div>
-    <Foter/>
+    <Footer/>
     </>
   );
 }

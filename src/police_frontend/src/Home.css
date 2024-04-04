@@ -1,78 +1,10 @@
-/* Home.css */
-
-/* Header Styles */
-.h {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+main h1{
   text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
-
-/* Background Image and Content Styles */
-.complaint-bg {
-  position: relative;
-  text-align: center;
-}
-
-.complaint-bg img {
-  width: 100%;
-  height: auto;
-}
-
-/* Top Right Positioned Elements */
-.t {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-/* Connect Wallet Button Styles */
-.t button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Signup Link Styles */
-.signup {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none; /* Remove underline */
-}
-
-.signup:hover {
-  background-color: blue; /* Change color on hover */
-}
-
-/* Button Hover Effect */
-.t button:hover {
-  background-color: blue;
-}
-
-/* Media Queries for Various Screen Resolutions */
-@media screen and (max-width: 992px) {
-  .t {
-    top: 15px;
-    right: 15px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .t {
-    top: 10px;
-    right: 10px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .t {
-    top: 5px;
-    right: 5px;
-  }
 }

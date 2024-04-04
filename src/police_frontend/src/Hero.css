@@ -1,0 +1,76 @@
+.hero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero-text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-text p{
+    font-size: 1.3rem;
+    color: white;
+    padding: 0.5rem 0 2rem 0;
+    text-align: center;
+}
+.connecttowallet{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.connecttowallet button:hover {
+    background-color: red; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    border: 1px solid red; /* Change border color on hover */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  .connecttowallet button:hover a {
+    color: white; /* Change link color inside button on hover */
+  }
+.login-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.connecttowallet a{
+    text-decoration: none;
+    color: white;
+}
+
+.login-button:hover {
+  background-color: #e71e1e;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text h1{
+        padding: 10px 20px;
+    }
+    .hero-text p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+}

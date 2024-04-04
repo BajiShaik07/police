@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Profile.css'; // Import the CSS file
 import logo from '../../public/user-image.png';
-import Foter from './Foter';
 
 const UserProfile = ({ principal, name, dob, gender, isBlurred }) => {
   const profileClass = isBlurred ? 'profile-section blurred' : 'profile-section';

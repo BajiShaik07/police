@@ -1,5 +1,76 @@
-
-.logob {
+.footer{
+    padding: 4rem 6rem;
+    background-color: rgba(161, 158, 158, 0.256);
+    color: black;
+    margin-top: 20px;
+    position: relative;
+    top: 15%;
+    border-color: aqua;
+}
+.top{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.top img{
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    height: 150px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+}
+.bottom{
+    padding-top: 4rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bottom div{
+    display: flex;
+    flex-direction: column;
+}
+.bottom h4{
+    font-size: 1.3rem;
+    padding: 1rem 0 0.8rem;
+}
+.bottom a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0.6rem;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.top i{
+    color: black;
+    font-size: 2rem;
+    margin-left: 1rem;
+
+}
+.ic{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ic a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.c{
+    text-align: center;
+    margin-top: 30px;
+}
+@media screen and (max-width: 480px) {
+    .footer{
+        padding: 4rem 2rem;
+    }
+    .footer i{
+        margin: 1rem 1rem 0 0;
+    }
+    .bottom div{
+        width: 50%;
+    }
 }
