@@ -8,7 +8,23 @@
     min-height: 100vh;
     background-color: #f0f0f0;
 }
-
+.back{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.back a{
+    text-decoration: none;
+    color: white;
+}
+.back:hover{
+    background-color: #da2c2f;
+    color: white;
+}
 .logo {
     width: 100%;
     height: auto;

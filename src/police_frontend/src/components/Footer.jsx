@@ -31,8 +31,8 @@ const Footer = () => {
           </div>
           <div>
             <h4>Services</h4>
-            <a href="#">Raise New Complaint</a>
-            <a href="#">Retrieve with Actions and TimeStamp </a>
+            <a href="/complaint">Raise New Complaint</a>
+            <a href="/uList">Retrieve with Actions and TimeStamp </a>
           </div>
           <div>
             <h4>Others</h4>

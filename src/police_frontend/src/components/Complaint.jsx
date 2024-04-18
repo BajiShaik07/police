@@ -142,6 +142,7 @@ const Complaint = () => {
 
   return (
     <>
+    <button className='back'><a href="/userProfile" >Back</a></button>
     <div className='complaint-container'>
       <img className='logo' src={logo} alt="Complaint" />
       <div className='complaint-form'>

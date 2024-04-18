@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import { police_backend } from "declarations/police_backend";
 import "../PList.css";
-import Footer from "./Footer";
+import Footer from "./Footer1";
 
 const PList = () => {
   const [firs, setFirs] = useState([]);
@@ -95,10 +95,11 @@ const PList = () => {
 
   return (
     <>
+    <button className="back"><a href="/policeProfile">Back</a></button>
     <div className="container-fluid mt-2">
     <div className="status-container ">
       <div className="update-section">
-        <h2>Update Status and Action</h2>
+        <h2 className="h22">Update Status and Action</h2>
         <div className="input-container">
           <label htmlFor="complaintId">Complaint ID:</label>
           <input
@@ -137,7 +138,7 @@ const PList = () => {
         </div>
       </div>
       <div className="status-list">
-        <h2>Complaint Status List</h2>
+        <h2 className="h22"> Complaint Status List</h2>
         <div className="table-container">
           <table>
             <thead>
@@ -189,7 +190,7 @@ const PList = () => {
         </div>
       </div>
       <div className="status-display">
-        <h2>Selected Complaint Status</h2>
+        <h2 className="">Selected Complaint Status</h2>
         <p>{selectedComplaintStatus}</p>
       </div>
     </div>

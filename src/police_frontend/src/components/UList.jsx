@@ -34,8 +34,9 @@ const UList = () => {
 
   return (
     <>
+    <button className="back"><a href="/userProfile">Back</a></button>
     <div className="complaint-list">
-      <h2>Complaint List</h2>
+      <h2 className="h22">Complaint List</h2>
       <div className="table-container">
         <div className="input-container">
           <label htmlFor="complaintId">Complaint ID:</label>

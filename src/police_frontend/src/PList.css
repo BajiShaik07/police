@@ -6,35 +6,51 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
-  
-  /* Section for updating status and action */
-  .update-section {
+}
+.back{
+    margin-top: 20px;
     margin-bottom: 20px;
-  }
-  
-  .update-section h2 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.back a{
+    text-decoration: none;
+    color: white;
+}
+.back:hover{
+    background-color: #da2c2f;
+    color: white;
+}
+/* Section for updating status and action */
+.update-section {
+    margin-bottom: 20px;
+}
+
+.update-section h2 {
     margin-bottom: 10px;
-  }
-  
-  .input-container {
+}
+
+.input-container {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-  }
-  
-  .input-container label {
+}
+
+.input-container label {
     margin-right: 10px;
-  }
-  
-  .input-container input[type="text"] {
+}
+
+.input-container input[type="text"] {
     margin-right: 10px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .input-container button {
+}
+
+.input-container button {
     background-color: red;
     color: white;
     border: none;
@@ -42,73 +58,81 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  .input-container button:hover {
+}
+
+.input-container button:hover {
     background-color: blue;
-  }
-  
-  /* Section for displaying the list of complaints and their statuses */
-  .status-list {
+}
+
+/* Section for displaying the list of complaints and their statuses */
+.status-list {
     width: 100%;
-  }
-  
-  .table-container {
+}
+
+.table-container {
     overflow-x: auto;
-  }
-  
-  table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  table th,
-  table td {
-    border: 1px solid #ddd;
+    border-width: 2px; /* Set border width to 2 pixels */
+}
+
+table th,
+table td {
+    border: 4px solid #102aec; /* Set border width to 2 pixels */
     padding: 8px;
     text-align: left;
-  }
-  
-  /* Section for displaying the selected complaint status */
-  .status-display {
+}
+
+.h22{
+    color: rgb(255, 0, 17);
+    font-size: 22px;
+    margin-bottom: 10px;
+
+}
+
+/* Section for displaying the selected complaint status */
+.status-display {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
     max-width: 600px;
-  }
-  
-  .status-display h2 {
+}
+
+.status-display h2 {
     margin-bottom: 10px;
-  }
-  
-  /* Media Queries for Various Screen Resolutions */
-  @media screen and (max-width: 992px) {
+}
+
+/* Media Queries for Various Screen Resolutions */
+@media screen and (max-width: 992px) {
     .status-container {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     .input-container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .input-container label {
-      margin-bottom: 5px;
+        margin-bottom: 5px;
     }
-  
+
     .input-container input[type="text"] {
-      margin-right: 0;
-      margin-bottom: 10px;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
-  
+
     .input-container button {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .status-display {
-      max-width: none;
+        max-width: none;
     }
-  }
+}
