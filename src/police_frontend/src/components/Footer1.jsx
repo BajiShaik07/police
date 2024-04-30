@@ -30,7 +30,7 @@ const Footer1 = () => {
         </div>
         <div>
           <h4>Services</h4>
-          <a href="/plist">Update Status and Actions</a>
+          <a href="#">Update Status and Actions</a>
         </div>
         <div>
           <h4>Others</h4>
